@@ -1,0 +1,18 @@
+{
+  "name": "todo_list_using_nodejs",
+  "version": "1.0.0",
+  "description": "A todo list using node js and mongo ",
+  "main": "bootstrap.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Yuvraj verma",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "express": "^4.17.2",
+    "mongoose": "^6.1.8",
+    "nodemon": "^2.0.15",
+    "pug": "^3.0.2"
+  }
+}

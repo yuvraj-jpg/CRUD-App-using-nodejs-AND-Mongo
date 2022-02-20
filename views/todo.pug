@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        style 
+            include ../static/bootstrap.css
+
+        <title>CRUD App</title>
+    </head>
+    <nav class="navbar navbar-dark bg-dark" >
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <h1>CRUD App</h1></a></div>
+</nav>  
+<div class="container">
+    <h1>ADD YOUR WORK HERE !!!</h1>
+    <form action="/" method="POST">
+    
+        <div class="form-group mb-3">
+            <label for="title">Title</label>
+            <input type="text" class="form-control" name="title" placeholder="Enter Title of your work" id="exampleInputEmail1" aria-describedby="emailHelp" >
+        </div>
+        <div class="form-group mb-3">
+            <label for="title">Description</label>
+            <input type="text" class="form-control" name="description"  placeholder="Enter Description of your work" id="exampleInputEmail1" aria-describedby="emailHelp" >
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div><div class="container my-4">
+    <h1>Your Added TODO</h1>
+    <table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Sno.</th>
+            <th scope="col">Title</th>
+            <th scope="col">Description</th>
+            <th scope="col">Action</th>
+        </tr>
+    </thead>
+    <tbody>
+
+each data,index in result
+    <tr>
+    <th scope="row">#{index+1}</th>
+    <td>#{data.title}</td>
+    <td>#{data.description}</td>
+    <td>
+        <a href="/update/#{data.id}"><button type="submit"class="btn btn-outline-success btn-sm">Update</button></a>
+        <a href="/delete/#{data.id}"><button type="submit"class="btn btn-outline-danger btn-sm">Delete</button></a>
+    </td>
+    </tr> 
+</tbody>
+</table>
+</div>
+
+
+script 
+    include ../static/bootstrap.js
+</body>
+</html>
